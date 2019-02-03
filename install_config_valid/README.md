@@ -1,3 +1,5 @@
+### [Installation, Configuration & Validation](./install_config_valid/README.md)
+
 * Design a Kubernetes cluster.
 * Install Kubernetes masters and nodes, including the use of TLS bootstrapping.
 * Configure secure cluster communications.
