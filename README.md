@@ -2,10 +2,10 @@
 
 Details about the [CNCF CKA Program](https://www.cncf.io/certification/cka/)
 
-This repos servces to outline the [CNCF Curriculum](https://github.com/cncf/curriculum/)
+This repos services to outline the [CNCF Curriculum](https://github.com/cncf/curriculum/)
 
     
-    [] Application Lifecycle Management 8%
+    [X] Application Lifecycle Management 8%
     [] Cluster Maintenance 11%
     [] Installation, Configuration & Validation 12%
     [] Logging / Monitoring 5%
