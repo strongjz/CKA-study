@@ -22,23 +22,23 @@ More Information
 * [Exam Tips]()
 * [Frequently Asked Questions]()
 
-### [Application Lifecycle Management](./application_lifcycle/README.md)
+### [Application Lifecycle Management](./application_lifecycle/README.md)
 * Understand Deployments and how to perform rolling updates and rollbacks.
 *  Know various ways to configure applications.
 *  Know how to scale applications.
 *  Understand the primitives necessary to create a self-healing application.
 
-### Core Concepts
+### [Core Concepts](./core_concepts/README.md)
 *  Understand the Kubernetes API primitives. 
 * Understand the Kubernetes cluster architecture.
 * Understand Services and other network primitives.
 
-### Cluster Maintenance
+### [Cluster Maintenance](./cluster_maintenance/README.md)
 * Understand Kubernetes cluster upgrade process.
 * Facilitate operating system upgrades.
 * Implement backup and restore methodologies.
 
-### Installation, Configuration & Validation
+### [Installation, Configuration & Validation](./install_config_valid/README.md)
 * Design a Kubernetes cluster.
 * Install Kubernetes masters and nodes, including the use of TLS bootstrapping.
 * Configure secure cluster communications.
@@ -52,13 +52,13 @@ More Information
 * Run Node end-to-end tests.
 
 
-### Logging Monitoring
+### [Logging Monitoring](./logging_monitoring/README.md)
 * Understand how to monitor all cluster components.
 * Understand how to monitor applications.
 * Manage cluster component logs. 
 * Manage application logs.
 
-### Networking
+### [Networking](./networking/README.md)
 * Understand the networking configuration on the cluster nodes.
 * Understand Pod networking concepts.
 * Understand service networking.
@@ -67,7 +67,7 @@ More Information
 * Know how to configure and use the cluster DNS.
 * Understand CNI.
 
-### Scheduling
+### [Scheduling](./scheduling/README.md)
 * Use label selectors to schedule Pods.
 * Understand the role of DaemonSets.
 * Understand how resource limits can affect Pod scheduling.
@@ -76,7 +76,7 @@ More Information
 * Display scheduler events.
 * Know how to configure the Kubernetes scheduler.
 
-### Security
+### [Security](./security/README.md)
 *  Know how to configure authentication and authorization.
 *  Understand Kubernetes security primitives.
 *  Know to configure network policies.
@@ -86,14 +86,14 @@ More Information
 *  Secure persistent key value store.
 *  Work with role-based access control.
 
-### Storage
+### [Storage](./storage/README.md)
 * Understand persistent volumes and know how to create them.
 * Understand access modes for volumes.
 * Understand persistent volume claims primitive.
 * Understand Kubernetes storage objects.
 * Know how to configure applications with persistent storage.
 
-### Troubleshooting
+### [Troubleshooting](./troubleshooting/README.md)
 * Troubleshoot application failure.
 * Troubleshoot control plane failure. 
 * Troubleshoot worker node failure.
