@@ -4,17 +4,16 @@ Details about the [CNCF CKA Program](https://www.cncf.io/certification/cka/)
 
 This repos servces to outline the [CNCF Curriculum](https://github.com/cncf/curriculum/)
 
-
-    Application Lifecycle Management 8%
-    Core Concepts 19%
-    Cluster Maintenance 11%
-    Installation, Configuration & Validation 12%
-    Logging / Monitoring 5%
-    Networking 11%
-    Scheduling 5%
-    Security 12%
-    Storage 7%
-    Troubleshooting 10%
+    
+    [] Application Lifecycle Management 8%
+    [] Cluster Maintenance 11%
+    [] Installation, Configuration & Validation 12%
+    [] Logging / Monitoring 5%
+    [] Networking 11%
+    [] Scheduling 5%
+    [] Security 12%
+    [] Storage 7%
+    [] Troubleshooting 10%
 
 More Information
 * [Candidate Handbook](https://www.cncf.io/certification/candidate-handbook)
@@ -24,12 +23,12 @@ More Information
 
 ### [Application Lifecycle Management](./application_lifecycle/README.md)
 * Understand Deployments and how to perform rolling updates and rollbacks.
-*  Know various ways to configure applications.
-*  Know how to scale applications.
-*  Understand the primitives necessary to create a self-healing application.
+* Know various ways to configure applications.
+* Know how to scale applications.
+* Understand the primitives necessary to create a self-healing application.
 
 ### [Core Concepts](./core_concepts/README.md)
-*  Understand the Kubernetes API primitives. 
+* Understand the Kubernetes API primitives. 
 * Understand the Kubernetes cluster architecture.
 * Understand Services and other network primitives.
 
@@ -77,14 +76,14 @@ More Information
 * Know how to configure the Kubernetes scheduler.
 
 ### [Security](./security/README.md)
-*  Know how to configure authentication and authorization.
-*  Understand Kubernetes security primitives.
-*  Know to configure network policies.
-*  Create and manage TLS certificates for cluster components.
-*  Work with images securely.
-*  Define security contexts.
-*  Secure persistent key value store.
-*  Work with role-based access control.
+* Know how to configure authentication and authorization.
+* Understand Kubernetes security primitives.
+* Know to configure network policies.
+* Create and manage TLS certificates for cluster components.
+* Work with images securely.
+* Define security contexts.
+* Secure persistent key value store.
+* Work with role-based access control.
 
 ### [Storage](./storage/README.md)
 * Understand persistent volumes and know how to create them.
