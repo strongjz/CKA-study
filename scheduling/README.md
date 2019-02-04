@@ -6,3 +6,7 @@
 * Manually schedule a pod without a scheduler.
 * Display scheduler events.
 * Know how to configure the Kubernetes scheduler.
+
+
+https://kubernetes.io/docs/reference/command-line-tools-reference/kube-scheduler/
+

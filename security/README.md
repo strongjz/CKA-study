@@ -9,13 +9,22 @@
 7. Secure persistent key value store.
 8. Work with role-based access control.
 
+[Security Best practices Kubernetes deployment](https://kubernetes.io/blog/2016/08/security-best-practices-kubernetes-deployment/)
+
+[Securing a kubernetes cluster](https://kubernetes.io/docs/tasks/administer-cluster/securing-a-cluster/)
+
+[Building for Trust: How to Secure Your Kubernetes Cluster [I] - Alexander Mohr & Jess Frazelle](https://www.youtube.com/watch?v=YRR-kZub0cA)
+
+
 #### 1. Know how to configure authentication and authorization.
 
-#####Authentication
+##### Authentication
 
-https://v1-11.docs.kubernetes.io/docs/reference/access-authn-authz/authentication/
+[AuthN AuthZ](https://docs.kubernetes.io/docs/reference/access-authn-authz/authentication/)
 
-* Authentication Methods
+[RBAC](https://kubernetes.io/docs/reference/access-authn-authz/rbac/)
+
+Authentication Methods
 * client certificates
 * bearer tokens
 * an authenticating proxy
@@ -23,14 +32,58 @@ https://v1-11.docs.kubernetes.io/docs/reference/access-authn-authz/authenticatio
 
 ##### Authorization
 
-https://v1-11.docs.kubernetes.io/docs/reference/access-authn-authz/authorization/
 
 * Role - set of permissions that is namespaced
 * RoleBinding - A role binding grants the permissions defined in a role to a user or set of users.
 * ClusterRole - set of permissions that is cluster wide
-* ClusterRoleBinding - DEFINE
+* ClusterRoleBinding - A Cluster binding grants the permissions defined in a  clusterrole to a user or set of users.
 
-High level: Cluster setup
+#### 2. Understand Kubernetes security primitives.
+
+Pod Security Policies
+
+Network Policies
+
+Resource Qoutas
+
+PodSecurityContext->runAsNonRoot
+
+https://kubernetes.io/docs/tasks/configure-pod-container/security-context/
+
+
+Know how to configure authentication and authorization
+
+    Access the api
+    Authentication
+    Authorization with RBAC
+    Admission Control
+
+
+
+
+#### 3. Know to configure network policies.
+
+
+
+#### 4. Create and manage TLS certificates for cluster components.
+
+https://kubernetes.io/docs/setup/certificates/
+https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet-tls-bootstrapping/
+
+
+Kubernetes requires PKI for the following operations:
+
+    Client certificates for the kubelet to authenticate to the API server
+    Server certificate for the API server endpoint
+    Client certificates for administrators of the cluster to authenticate to the API server
+    Client certificates for the API server to talk to the kubelets
+    Client certificate for the API server to talk to etcd
+    Client certificate/kubeconfig for the controller manager to talk to the API server
+    Client certificate/kubeconfig for the scheduler to talk to the API server.
+    Client and server certificates for the front-proxy
+    
+
+#### High level: Cluster setup
 
 https://kubernetes.io/docs/concepts/cluster-administration/certificates/
 
@@ -47,6 +100,7 @@ A. Generating Certificates
 7. Generate the service-account certificate and private key
 8. Copy the appropriate certificates and private keys to each worker instance
 9. Copy the appropriate certificates and private keys to each controller instance
+
 B. Generate Kube configs
 
 1. Generate kubeconfig files for the controller manager, kubelet, kube-proxy, and scheduler clients and the admin user
@@ -59,5 +113,30 @@ B. Generate Kube configs
 8. Copy the appropriate kube-controller-manager and kube-scheduler kubeconfig files to each controller instance
 
 
-https://www.youtube.com/watch?v=YRR-kZub0cA
+#### 5. Work with images securely.
+
+1. Scan images for CVE's
+2. Run only authorized images
+3. Sign container images
+4. Run containers as non-root, non-privileged users
+
+#### 6. Define security contexts.
+
+#### 7. Secure persistent key value store.
+
+How to Deploy a secure ETCD cluster
+
+https://pcocc.readthedocs.io/en/latest/deps/etcd-production.html
+
+https://coreos.com/os/docs/latest/generate-self-signed-certificates.html
+
+https://coreos.com/etcd/docs/latest/op-guide/recovery.html
+
+https://coreos.com/etcd/docs/latest/op-guide/configuration.html
+
+
+
+#### 8. Work with role-based access control.
+
+
 

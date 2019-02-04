@@ -6,3 +6,6 @@
 * Know how to use Ingress rules.
 * Know how to configure and use the cluster DNS.
 * Understand CNI.
+
+https://kubernetes.io/docs/reference/command-line-tools-reference/kube-proxy/
+
